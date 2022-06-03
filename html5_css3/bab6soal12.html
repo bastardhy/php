@@ -1,0 +1,220 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<title>contoh css 6-12</title>
+<style type="text/css">
+<!--
+        *{
+            margin:0;
+            padding:0;
+        }
+        body{
+            font-family: Georgia, serif;
+            font-size: 20px;
+            font-style: italic;
+            font-weight: normal;
+            letter-spacing: normal;
+            background: #f0f0f0;
+        }
+        #content{
+            background-color:#fff;
+            width:750px;
+            padding:40px;
+            margin:0 auto;
+            border-left:30px solid #1D81B6;
+            border-right:1px solid #ddd;
+            -moz-box-shadow:0px 0px 16px #aaa;
+        }
+        .head{
+            font-family:Helvetica,Arial,Verdana;
+            text-transform:uppercase;
+            font-weight:bold;
+            font-size:12px;
+            font-style:normal;
+            letter-spacing:3px;
+            color:#888;
+            border-bottom:3px solid #f0f0f0;
+            padding-bottom:10px;
+            margin-bottom:10px;
+        }
+        .head a{
+            color:#1D81B6;
+            text-decoration:none;
+            float:right;
+            text-shadow:1px 1px 1px #888;
+        }
+        .head a:hover{
+            color:#f0f0f0;
+        }
+        #content h1{
+            font-family:"Trebuchet MS",sans-serif;
+            color:#1D81B6;
+            font-weight:normal;
+            font-style:normal;
+            font-size:56px;
+            text-shadow:1px 1px 1px #aaa;
+        }
+        #content h2{
+            font-family:"Trebuchet MS",sans-serif;
+            font-size:34px;
+            font-style:normal;
+            background-color:#f0f0f0;
+            margin:40px 0px 30px -40px;
+            padding:0px 40px;
+            clear:both;
+            float:left;
+            width:100%;
+            color:#aaa;
+            text-shadow:1px 1px 1px #fff;
+        }
+
+table.table2{
+    font-family: Georgia, serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: normal;
+    letter-spacing: -1px;
+    line-height: 1.2em;
+    border-collapse:collapse;
+    text-align:center;
+}
+
+.table2 thead th, .table2 tfoot td{
+    padding:20px 10px 40px 10px;
+    color:#fff;
+    font-size: 26px;
+    background-color:#222;
+    font-weight:normal;
+    border-right:1px dotted #666;
+    border-top:3px solid #666;
+    -moz-box-shadow:0px -1px 4px #000;
+    -webkit-box-shadow:0px -1px 4px #000;
+    box-shadow:0px -1px 4px #000;
+    text-shadow:1px 1px 1px #000;
+}
+
+.table2 tfoot th{
+    padding:10px;
+    font-size:18px;
+    text-transform:uppercase;
+    color:#888;
+}
+
+.table2 tfoot td{
+    font-size:36px;
+    color:#EF870E;
+    border-top:none;
+    border-bottom:3px solid #666;
+    -moz-box-shadow:0px 1px 4px #000;
+    -webkit-box-shadow:0px 1px 4px #000;
+    box-shadow:0px 1px 4px #000;
+}
+
+.table2 thead th:empty{
+    background:transparent;
+    -moz-box-shadow:none;
+    -webkit-box-shadow:none;
+    box-shadow:none;
+}
+
+.table2 thead :nth-last-child(1){
+    border-right:none;
+}
+
+.table2 thead :first-child,
+.table2 tbody :nth-last-child(1){
+    border:none;
+}
+
+.table2 tbody th{
+    text-align:right;
+    padding:10px;
+    color:#333;
+    text-shadow:1px 1px 1px #ccc;
+    background-color:#f9f9f9;
+}
+
+.table2 tbody td{
+    padding:10px;
+    background-color:#f0f0f0;
+    border-right:1px dotted #999;
+    text-shadow:-1px 1px 1px #fff;
+    text-transform:uppercase;
+    color:#333;
+}
+
+.table2 tbody span.check::before{
+    content : url(check1.png)
+}
+-->
+</style>
+</head>
+<body>
+<table class="table2">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th scope="col" abbr="Starter">Header/Judul 1</th>
+                        <th scope="col" abbr="Medium">Header/Judul 2</th>
+                        <th scope="col" abbr="Business">Header/Judul 3</th>
+                        <th scope="col" abbr="Deluxe">Header/Judul 4</th>
+                    </tr>
+                </thead>
+                <tfoot>
+                    <tr>
+                        <th scope="row">Total</th>
+                        <td>Total 1</td>
+                        <td>Total 2</td>
+                        <td>Total 3</td>
+                        <td>Total 4</td>
+                    </tr>
+                </tfoot>
+                <tbody>
+                    <tr>
+                        <th scope="row">Baris 1</th>
+                        <td>Baris 11</td>
+                        <td>Baris 12</td>
+                        <td>Baris 13</td>
+                        <td>Baris 14</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Baris 2</th>
+                        <td>Baris 21</td>
+                        <td>Baris 22</td>
+                        <td>Baris 23</td>
+                        <td>Baris 24</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Baris 3</th>
+                        <td>Baris 31</td>
+                        <td>Baris 32</td>
+                        <td>Baris 33</td>
+                        <td>Baris 34</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Baris 4</th>
+                        <td>Baris 41</td>
+                        <td>Baris 42</td>
+                        <td>Baris 43</td>
+                        <td>Baris 44</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Baris 5</th>
+                        <td><span class="check"></span></td>
+                        <td><span class="check"></span></td>
+                        <td><span class="check"></span></td>
+                        <td><span class="check"></span></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Baris 6</th>
+                        <td><span class="check"></span></td>
+                        <td><span class="check"></span></td>
+                        <td><span class="check"></span></td>
+                        <td><span class="check"></span></td>
+                    </tr>
+                </tbody>
+            </table>
+</body>
+</html>
+
+
+

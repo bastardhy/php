@@ -1,0 +1,112 @@
+body {
+	background: url(../images/wall.jpg) no-repeat fixed top center;
+	font-family: cursive;
+	}
+	
+h1 {
+	color: white;
+	text-align: center;
+	}
+	
+li {
+	display: block;
+	}
+	
+a {
+	color: wheat;
+	font-family: cursive;
+	font-size: 14px;
+	text-decoration: none;
+	}
+
+a:hover {
+    color: goldenrod;
+    cursor: pointer;
+	}
+	
+#header {
+	margin: 30px 500px;
+	}
+
+.wrapper {
+	width: 200px;
+	text-align: center;
+	margin: 0 auto;
+	padding: 20px 50px;
+	background-color: rgba(255,255,255,0.1);
+	border:double 10px black;
+   -moz-border-radius: 20px;
+   -webkit-border-radius: 20px;
+   border-radius: 20px;
+	}
+	
+input[type=text],
+input[type=password],
+input[type=submit]	{
+	color: wheat;
+	background : #696969;
+	border-color: transparent;
+	border-radius: 5px;
+	font-size: 16px;
+	width: 200px; 
+ 	height: 39px;
+ 	margin: 10px auto;
+	}
+	
+#signup-button {
+	background-color: goldenrod;
+	color: black;
+	cursor: pointer;
+	border-color: transparent;
+	border-radius: 5px;
+	}
+	
+#signup-button:hover {
+	background-color:	gold;
+	}	
+
+#signin-button {
+	background-color: goldenrod;
+	color: black;
+	cursor: pointer;
+	border-color: transparent;
+	border-radius: 5px;
+	}
+	
+#signin-button:hover {
+	background-color:	gold;
+	}	
+
+#reset-button {
+	background-color: goldenrod;
+	color: black;
+	cursor: pointer;
+	border-color: transparent;
+	border-radius: 5px;
+	}
+	
+#reset-button:hover {
+	background-color:	gold;
+	}	
+
+.footer	{
+	bottom: 0px;
+	position: absolute;
+	margin: 0 500px;
+	text-align: center;
+	font-family: arial;
+	font-size: 14px;
+	color: wheat;
+	}
+	
+.copy-left {
+    display: inline-block;
+    margin: 0;
+    font-size: 14px;
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: FlipH;
+	}

@@ -1,0 +1,39 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<title>contoh css 5-39</title>
+<style type="text/css">
+<!--
+#lokasi {
+    position: relative;
+    height: 7em;
+    background: #efefef;
+    text-align: center;
+  }
+
+#kotak {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100px;
+    background: red;
+    line-height: 3.5em;
+    color: #fff;
+    -webkit-transition: 1s bottom, 4s 1s left cubic-bezier(0,1,1,1);
+    -moz-transition: 1s bottom, 4s 1s left cubic-bezier(0,1,1,1);
+    -o-transition: 1s bottom, 4s 1s left cubic-bezier(0,1,1,1);
+    transition: 1s bottom, 4s 1s left cubic-bezier(0,1,1,1);
+  }
+ 
+#lokasi:hover #kotak {
+    left: calc(100% - 100px);
+    bottom: 3.5em;
+  }
+-->
+</style>
+</head>
+<body>
+<div id="lokasi">
+<div id="kotak">#kotak</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<title>contoh css 5-38</title>
+<style type="text/css">
+<!--
+  /* keadaan awal */
+  #angkasaluar {
+    position: relative;
+    height: 400px;
+    background: #0c0440 url(angkasaluar.jpg);
+    color: #fff;
+  }
+  
+  div.roket {
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    -webkit-transition: 3s ease-in;
+    -moz-transition: 3s ease-in;
+    -o-transition: 3s ease-in;
+    transition: 3s ease-in;
+  }
+  
+  div.roket div {
+    width: 92px;
+    height: 215px;
+    background: url(roket.gif) no-repeat;
+    -webkit-transition: 2s ease-in-out;
+    -moz-transition: 2s ease-in-out;
+    -o-transition: 2s ease-in-out;
+    transition: 2s ease-in-out;
+  }
+
+  /* hover keadaan akhir */
+  #angkasaluar:hover div.roket {
+    -webkit-transform: translate(540px,-200px);
+    -moz-transform: translate(540px,-200px);
+    -o-transform: translate(540px,-200px);
+    -ms-transform: translate(540px,-200px);
+    transform: translate(540px,-200px);
+  }
+  
+  #angkasaluar:hover div.roket div {
+    -webkit-transform: rotate(70deg);
+    -moz-transform: rotate(70deg);
+    -o-transform: rotate(70deg);
+    -ms-transform: rotate(70deg);
+    transform: rotate(70deg);
+  }
+-->
+</style>
+</head>
+<body>
+<div id="angkasaluar">
+  <div class="roket">
+    <div><!-- roket --></div>
+    .roket
+    </div>#angkasaluar</div>
+</body>
+</html>

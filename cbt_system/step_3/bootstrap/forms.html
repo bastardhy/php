@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	 <!-- Berikan Meta Tag dan Meta Description -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+	 <!-- Buat Icon  -->
+     <link rel="icon" href="images/favicon.png">
+      <!-- Judul Halaman  -->
+	<title>..::Belajar Menggunakan Bootstrap | Imago Media::..</title>
+    <!-- Pamggil CSS Boostrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	</head>
+    <body>
+	<!-- Bagian Header  -->
+ 	<!-- Fixed navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html"><img src="images/bootstrap.png" height="41"></a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Beranda</a></li>
+            <li><a href="#">Menu 1</a></li>
+            <li><a href="#">Menu 2</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Menu Dropdown <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Sub Menu 1</a></li>
+                <li><a href="#">Sub Menu 2</a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Menu Kanan 1</a></li>
+            <li><a href="#">Menu Kanan 2</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+<!-- Bagian Isi  -->
+	<div class="container">
+    <div class="page-header">
+        <h1>Element Forms Pada Boostraap</h1>
+        <p>Langkah mudah menerapkan <strong>Forms</strong> dengan bootstrap.</p>
+     	</div>
+        <form>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+          </div>
+          <div class="form-group">
+            <label for="exampleSelect1">Example select</label>
+            <select class="form-control" id="exampleSelect1">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="exampleSelect2">Example multiple select</label>
+            <select multiple class="form-control" id="exampleSelect2">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="exampleTextarea">Example textarea</label>
+            <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputFile">File input</label>
+            <input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">
+            <small id="fileHelp" class="form-text text-muted">This is some placeholder block-level help text for the above input. It's a bit lighter and easily wraps to a new line.</small>
+          </div>
+          <fieldset class="form-group">
+            <legend>Radio buttons</legend>
+            <div class="form-check">
+              <label class="form-check-label">
+                <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                Option one is this and that&mdash;be sure to include why it's great
+              </label>
+            </div>
+            <div class="form-check">
+            <label class="form-check-label">
+                <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="option2">
+                Option two can be something else and selecting it will deselect option one
+              </label>
+            </div>
+            <div class="form-check disabled">
+            <label class="form-check-label">
+                <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios3" value="option3" disabled>
+                Option three is disabled
+              </label>
+            </div>
+          </fieldset>
+          <div class="form-check">
+            <label class="form-check-label">
+              <input type="checkbox" class="form-check-input">
+              Check me out
+            </label>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+
+
+      <div class="page-header">
+        <h1>Textual inputs</h1>
+      </div>
+            <div class="form-group row">
+              <label for="example-text-input" class="col-xs-2 col-form-label">Text</label>
+              <div class="col-xs-10">
+                <input class="form-control" type="text" value="Artisanal kale" id="example-text-input">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="example-search-input" class="col-xs-2 col-form-label">Search</label>
+              <div class="col-xs-10">
+                <input class="form-control" type="search" value="How do I shoot web" id="example-search-input">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="example-email-input" class="col-xs-2 col-form-label">Email</label>
+              <div class="col-xs-10">
+                <input class="form-control" type="email" value="bootstrap@example.com" id="example-email-input">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="example-url-input" class="col-xs-2 col-form-label">URL</label>
+              <div class="col-xs-10">
+                <input class="form-control" type="url" value="http://getbootstrap.com" id="example-url-input">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="example-tel-input" class="col-xs-2 col-form-label">Telephone</label>
+              <div class="col-xs-10">
+                <input class="form-control" type="tel" value="1-(555)-555-5555" id="example-tel-input">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="example-password-input" class="col-xs-2 col-form-label">Password</label>
+              <div class="col-xs-10">
+                <input class="form-control" type="password" value="hunter2" id="example-password-input">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="example-number-input" class="col-xs-2 col-form-label">Number</label>
+              <div class="col-xs-10">
+                <input class="form-control" type="number" value="42" id="example-number-input">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="example-datetime-local-input" class="col-xs-2 col-form-label">Date and time</label>
+              <div class="col-xs-10">
+                <input class="form-control" type="datetime-local" value="2011-08-19T13:45:00" id="example-datetime-local-input">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="example-date-input" class="col-xs-2 col-form-label">Date</label>
+              <div class="col-xs-10">
+                <input class="form-control" type="date" value="2011-08-19" id="example-date-input">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="example-month-input" class="col-xs-2 col-form-label">Month</label>
+              <div class="col-xs-10">
+                <input class="form-control" type="month" value="2011-08" id="example-month-input">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="example-week-input" class="col-xs-2 col-form-label">Week</label>
+              <div class="col-xs-10">
+                <input class="form-control" type="week" value="2011-W33" id="example-week-input">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="example-time-input" class="col-xs-2 col-form-label">Time</label>
+              <div class="col-xs-10">
+                <input class="form-control" type="time" value="13:45:00" id="example-time-input">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="example-color-input" class="col-xs-2 col-form-label">Color</label>
+              <div class="col-xs-10">
+                <input class="form-control" type="color" value="#563d7c" id="example-color-input">
+              </div>
+            </div>
+	
+      <div class="page-header">
+        <h1>Grid Forms</h1>
+      </div>
+        <div class="container">
+          <form>
+            <div class="form-group row">
+              <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+              <div class="col-sm-10">
+                <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+              <div class="col-sm-10">
+                <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+              </div>
+            </div>
+            <fieldset class="form-group row">
+              <legend class="col-form-legend col-sm-2">Radios</legend>
+              <div class="col-sm-10">
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                    Option one is this and that&mdash;be sure to include why it's great
+                  </label>
+                </div>
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                    Option two can be something else and selecting it will deselect option one
+                  </label>
+                </div>
+                <div class="form-check disabled">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3" disabled>
+                    Option three is disabled
+                  </label>
+                </div>
+              </div>
+            </fieldset>
+            <div class="form-group row">
+              <label class="col-sm-2">Checkbox</label>
+              <div class="col-sm-10">
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox"> Check me out
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="offset-sm-2 col-sm-10">
+                <button type="submit" class="btn btn-primary">Sign in</button>
+              </div>
+            </div>
+          </form>
+        </div>
+
+      <div class="page-header">
+        <h1>Disabled states</h1>
+      </div>
+
+		<form>
+  		<fieldset disabled>
+    	<div class="form-group">
+      	<label for="disabledTextInput">Disabled input</label>
+     	 <input type="text" id="disabledTextInput" class="form-control" placeholder="Disabled input">
+    	</div>
+    <div class="form-group">
+      <label for="disabledSelect">Disabled select menu</label>
+      <select id="disabledSelect" class="form-control">
+        <option>Disabled select</option>
+      </select>
+    </div>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox"> Can't check this
+              </label>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </fieldset>
+        </form>
+      
+      <div class="page-header">
+        <h1>Inline Forms</h1>
+      </div>
+
+        <form class="form-inline">
+          <div class="form-group">
+            <label for="inputPassword4">Password</label>
+            <input type="password" id="inputPassword4" class="form-control" aria-describedby="passwordHelpInline">
+            <small id="passwordHelpInline" class="text-muted">
+              Must be 8-20 characters long.
+            </small>
+          </div>
+        </form>
+
+
+
+
+    </div>
+<!-- Bagian Footer  -->
+    <footer class="footer">
+      <div class="container">
+      	<p class="text-muted"><a href="http://getbootstrap.com/" target="_blank" title="responsive website template">Bootstrap CSS Grid</a>. Developed by <a href="http://getbootstrap.com" target="_top" title="responsive website template">bootstrap</a>.<br></p>
+        <p class="text-muted"><a href="http://imagomedia.co.id/" target="_blank" title="Website & APP Developement">Imago Media</a>. Dapatkan Tutorial Lengkap <a href="http://blog.imagomedia.co.id" target="_top" title="responsive website template">Blog Imago Media</a>.<br></p>
+      </div>
+    </footer>
+	 <!-- Load Java Script Bootstrap -->
+    <script src="js/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+</html>

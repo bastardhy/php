@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	 <!-- Berikan Meta Tag dan Meta Description -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+	 <!-- Buat Icon  -->
+     <link rel="icon" href="images/favicon.png">
+      <!-- Judul Halaman  -->
+	<title>..::Belajar Menggunakan Bootstrap | Imago Media::..</title>
+    <!-- Pamggil CSS Boostrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	</head>
+	<!-- Bagian Header  -->
+ 	<!-- Fixed navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html"><img src="images/bootstrap.png" height="41"></a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Beranda</a></li>
+            <li><a href="#">Menu 1</a></li>
+            <li><a href="#">Menu 2</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Menu Dropdown <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Sub Menu 1</a></li>
+                <li><a href="#">Sub Menu 2</a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Menu Kanan 1</a></li>
+            <li><a href="#">Menu Kanan 2</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+<!-- Bagian Isi  -->
+	<div class="container">
+    <div class="page-header">
+        <h1>Element Forms Pada Boostraap</h1>
+        <p>Langkah mudah menerapkan <strong>Forms</strong> dengan bootstrap.</p>
+     	</div>
+        <div class="page-header">
+        <h1>Table head options</h1>
+      </div>
+      <table class="table">
+  <thead class="thead-inverse">
+    <tr>
+      <th>#</th>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Username</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Larry</td>
+      <td>the Bird</td>
+      <td>@twitter</td>
+    </tr>
+  </tbody>
+</table>
+
+<table class="table">
+  <thead class="thead-default">
+    <tr>
+      <th>#</th>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Username</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Larry</td>
+      <td>the Bird</td>
+      <td>@twitter</td>
+    </tr>
+  </tbody>
+</table>
+            <div class="page-header">
+        <h1>Striped rows</h1>
+      </div>
+      <table class="table table-striped">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Username</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Larry</td>
+      <td>the Bird</td>
+      <td>@twitter</td>
+    </tr>
+  </tbody>
+</table>
+      
+            <div class="page-header">
+        <h1>Bordered table</h1>
+      </div>
+      <table class="table table-bordered">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Username</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@TwBootstrap</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+    </tr>
+    <tr>
+      <th scope="row">4</th>
+      <td colspan="2">Larry the Bird</td>
+      <td>@twitter</td>
+    </tr>
+  </tbody>
+</table>
+      
+            <div class="page-header">
+        <h1>Hoverable rows</h1>
+      </div>
+      <table class="table table-hover">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Username</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td colspan="2">Larry the Bird</td>
+      <td>@twitter</td>
+    </tr>
+  </tbody>
+</table>
+      
+            <div class="page-header">
+        <h1>Small table</h1>
+      </div>
+      <table class="table table-sm">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Username</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td colspan="2">Larry the Bird</td>
+      <td>@twitter</td>
+    </tr>
+  </tbody>
+</table>
+      
+                  <div class="page-header">
+        <h1>Contextual classes</h1>
+      </div>
+            <table class="table">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Username</th>
+      <th>Header</th>
+    </tr>
+  </thead>
+  <tbody>
+
+
+<!-- On cells (`td` or `th`) -->
+<tr>
+  <td class="table-active">Contextual classe</td>
+  <td class="table-success">Contextual classe</td>
+  <td class="table-warning">Contextual classe</td>
+  <td class="table-danger">Contextual classe</td>
+  <td class="table-info">Contextual classe</td>
+</tr>
+
+
+<!-- On cells (`td` or `th`) -->
+<tr>
+  <td class="bg-primary">Contextual classe</td>
+  <td class="bg-success">Contextual classe</td>
+  <td class="bg-warning">Contextual classe</td>
+  <td class="bg-danger">Contextual classe</td>
+  <td class="bg-info">Contextual classe</td>
+</tr>
+  
+    </tbody>
+</table>
+    </div>
+<!-- Bagian Footer  -->
+    <footer class="footer">
+      <div class="container">
+      	<p class="text-muted"><a href="http://getbootstrap.com/" target="_blank" title="responsive website template">Bootstrap CSS Grid</a>. Developed by <a href="http://getbootstrap.com" target="_top" title="responsive website template">bootstrap</a>.<br></p>
+        <p class="text-muted"><a href="http://imagomedia.co.id/" target="_blank" title="Website & APP Developement">Imago Media</a>. Dapatkan Tutorial Lengkap <a href="http://blog.imagomedia.co.id" target="_top" title="responsive website template">Blog Imago Media</a>.<br></p>
+      </div>
+    </footer>
+	 <!-- Load Java Script Bootstrap -->
+    <script src="js/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="js/bootstrap.min.js"></script>
+<body>
+</body>
+</html>

@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "Please login"
+AuthUserFile /var/www/html/modul/2/httpauth/pass.htpasswd
+Require user admin

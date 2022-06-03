@@ -1,0 +1,107 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<title>contoh css 3-59 </title>
+<style type="text/css">
+<!--
+table { width: 600px;
+        font-size: 14px;
+        font-family: helvetica, arial, sans-serif;
+        border-collapse: separate;
+        border-spacing: 5px;
+        table-layout: auto;
+}
+
+caption { background: #444;
+          caption-side: bottom;
+          color: #fff;
+          font-weight: bold;
+          line-height: 1.4;
+          margin: 0 5px;
+          padding: 15px;
+}
+
+caption h2 { font-size: 20px;
+             margin: 0 0 10px 0;
+}
+
+caption p { font-size: 16px;
+            margin: 0;
+}
+
+thead th,
+tfoot th,
+tfoot td { background: #eee;
+}
+
+th, td { padding: 10px;
+}
+
+thead th:first-child {
+  text-align: left;
+}
+
+tbody th,
+tfoot th { text-align: left;
+}
+
+#kuantitas-column { width: 200px;
+}
+
+#harga-column { background: #ddd;
+}
+-->
+</style>
+</head>
+<body>
+
+<table>
+  <caption>
+    <h2>Tabel Inventarisasi Barang</h2>
+    <p>Anda dapat memanfaatkan tabel ini untuk menginventarisasi 
+       semua barang kebutuhan Anda.</p>
+  </caption>
+  <colgroup>
+    <col id="produk">
+    <col id="kuantitas">
+    <col id="harga">
+    <col id="total">
+  </colgroup>
+  <thead>
+    <tr>
+      <th scope="col">Produk</th>
+      <th scope="col">Kuantitas</th>
+      <th scope="col">Harga</th>
+      <th scope="col">Total</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">Barang 1</th>
+      <td>9</td>
+      <td>Rp. 129.99</td>
+      <td>Rp. 1.169.91</td> 
+    </tr>
+    <tr>
+      <th scope="row">Barang 2</th>
+      <td>27</td>
+      <td>Rp. 79.99</td>
+      <td>Rp. 2.159.73</td>
+    </tr>
+    <tr>
+      <th scope="row">Barang 3</th>
+      <td>623</td>
+      <td>Rp. 4.99</td>
+      <td>Rp. 3.108.77</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <th scope="row">Total</th>
+      <td>659</td>
+      <td></td>
+      <td>Rp. 6.438.41</td>
+    </tr>
+  </tfoot>
+</table>
+</body>
+</html>

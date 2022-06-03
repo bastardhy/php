@@ -1,0 +1,15 @@
+/**************************************************************
+ AUTHOR:  Pat Heard (fullahead.org)
+ DATE:    2007.11.08
+ PURPOSE: Fixes IE6's problems
+ **************************************************************/
+
+/* display:block fix that must be hidden from IE Mac \*/
+#header #menu li a, ul.bigLinks li a {
+	height: 1%;
+}
+/* End IE Mac hide */
+
+#footer {
+	border-top: 0;
+}

@@ -1,0 +1,32 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<title>contoh css 5-30</title>
+<style type="text/css">
+<!--
+div#mars { background: #000; color: #fff;
+           font-family: Futura, Arial, sans-serif;
+           width: 400px; padding: 1.6rem;
+           line-height: 175%; border-radius: 6px; }
+
+img { display: block; margin: 0 auto; }
+
+div#mars p { margin: 1rem; }
+
+input ~ div { overflow: hidden; height: 0; transition: .6s all cubic-bezier(0.735, -0.485, 0.145, 1.625); }
+
+input:checked ~ div { height: 480px; }
+-->
+</style>
+</head>
+<body>
+<div id=mars>
+<input type=checkbox id=marstoggle>
+<div class=toggle>
+<img src=mars.jpg alt=Mars>
+<p>Sejumlah gas methane ditemukan di atmosfir Mars pada tahun 2003...
+Karena sifatnya tak stabil, keberadaan gas methane mengindikasikan adanya sumber aktif
+yang selalu mengeluarkan gas dengan laju berkisar 270 ton per tahun.</p>
+</div>
+</div>
+</body>
+</html>

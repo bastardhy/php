@@ -1,0 +1,33 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<HTML><HEAD>
+<TITLE>Contoh CSS 4-7</TITLE>
+<STYLE TYPE="text/CSS">
+<!--
+#LayerKelima { position:absolute; left:10px; top:100px;
+               color:blue; font-size:20pt;
+               border-style:ridge; border-width:20px; border-color:purple; }
+			  
+#LayerKeenam { position:absolute; left:10px; top:300px;
+               color:red; font-size:20pt;
+               border-style:ridge; border-width:20px; border-color:purple;
+               clip:rect('0,150,125,0'); }
+-->
+</STYLE>
+</HEAD>
+<BODY>
+
+<DIV ID="LayerKelima">
+Inilah bila <BR>
+tidak digunakan <BR>
+clip.
+</DIV>
+
+<DIV ID="LayerKeenam">
+Inilah bila <BR>
+digunakan properti <BR>
+clip.
+</DIV>
+
+<P>Elemen Paragraf.</P>
+</BODY>
+</HTML>

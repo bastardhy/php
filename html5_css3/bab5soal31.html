@@ -1,0 +1,53 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<title>contoh css 5-31</title>
+<style type="text/css">
+<!--
+input { padding: 1rem; transition: .5s 2s all cubic-bezier(0.475, -0.600, 0.435, 1.650); }
+
+input:invalid { border: 3px solid red; transform: translateX(10px); }
+
+body, input { background-color: rgb(20%,20%,20%); }
+
+input { appearance: none;
+        margin: 10px; width: 22px; height: 22px;
+        border-radius: 50%; cursor: pointer;
+        vertical-align: middle;
+        box-shadow: hsla(0,0%,100%,.15) 0 1px 1px, inset rgba(0,0,0,.5) 0 0 0 1px;
+        background-color: rgb(20%,20%,20%);
+        background-image: radial-gradient(
+            hsla(0,100%,90%,1) 0%,
+            hsla(0,100%,70%,1) 15%,
+            hsla(0,100%,60%,.3) 28%,
+            hsla(0,100%,30%,0) 70%
+        );
+        background-repeat: no-repeat;
+        transition-property: background-position, transform;
+        transition-duration: .15s, .25s;
+        transition-timing-function: cubic-bezier(.8, 0, 1, 1);
+}
+
+input:checked { transition-property: background-position, transform;
+                transition-duration: .2s, .25s;
+                transition-delay: .15s, 0s;
+                transition-timing-function: cubic-bezier(0, 0, .2, 1);
+}
+
+input:active { transform: scale(1.5); transition: transform .1s cubic-bezier(0, 0, .2, 1); }
+
+input,input:active { background-position: 22px 0; }
+
+input:checked { background-position: 0 0; }
+
+input:checked ~ input, input:checked ~ input:active { background-position: -22px 0; }
+-->
+</style>
+</head>
+<body>
+<input type="radio" name="radiobutton" checked>
+<input type="radio" name="radiobutton">
+<input type="radio" name="radiobutton">
+<input type="radio" name="radiobutton">
+<input type="radio" name="radiobutton">
+</body>
+</html>

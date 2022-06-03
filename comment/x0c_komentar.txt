@@ -1,0 +1,83 @@
++ -------------------------------------------------------------------------------- +
++            Membuat Fasilitas Komentar Sederhana dengan PHP dan MySQL             +
++                                                                                  +
++                                  al farisi                                       +
++                       Website : www.alfarisi.web.id                              +
++                                 www.indokreatif.net                              +
++                       E-mail  : el.numinous@gmail.com                            +
++ -------------------------------------------------------------------------------- +
+
+Beberapa waktu yang lalu ada permintaan untuk men-share cara membuat fasilitas 
+komentar seperti yang saya gunakan di website ini. Karena itulah, di sini akan saya 
+share contoh sederhana untuk membuat fasilitas komentar dengan menggunakan PHP dan 
+MySQL. Bagi yang sudah terbiasa coding dengan PHP dan MySQL mungkin bisa dilewati 
+saja bagian ini.
+
+Untuk mempermudah, saya sudah menyediakan beberapa file PHP dan query MySQL yang 
+akan digunakan. Silahkan download file :
+	http://alfarisi.web.id/downloads/article/example/komentar.zip
+Setelah di-ekstrak Anda akan  menemukan 2 file PHP dan 1 file SQL. Copy file PHP ke 
+folder htdocs web server Anda. Sedangkan untuk file SQL dapat langsung di-import ke 
+database.
+
+Contoh yang saya berikan adalah kode program untuk menambahkan komentar pada artikel
+yang telah kita buat sebelumnya. Karena itulah, pada tabel comment disediakan field 
+article_id yang akan menghubungkan komentar dengan artikel.
+
+CREATE TABLE `comment` (
+	`id` int(11) NOT NULL auto_increment,
+	`article_id` int(11) default NULL,
+	`name` varchar(50) default NULL,
+	`email` varchar(100) default NULL,
+	`comment` text,
+	`date` datetime default NULL,
+	PRIMARY KEY  (`id`)
+)
+
+Buatlah form input komentar sederhana yang terdiri dari nama, email dan komentar. 
+Untuk menghindari spam dan flooding, Anda dapat menggunakan Captcha. Saya 
+menambahkan fungsi sederhana dengan tujuan yang sama.
+
+function create_code() {
+	$temp = explode(" ", microtime());
+	$recnum = str_replace(".", "", $temp[1].$temp[0]);
+	
+	$rcode = hexdec(md5($recnum));
+	$code = substr($rcode, 2, 6);
+	
+	$_SESSION['tmp']['captcha'][0] = $recnum;
+	$_SESSION['tmp']['captcha'][1] = $code;
+	
+	return array($recnum, $code);
+}
+
+Tambahkan form input HTML untuk memasukkan kode verifikasi.
+
+$temp = create_code();
+$code1 = $temp[0];
+$code2 = $temp[1];
+
+echo "Masukkan kode berikut<br> {$code2} 
+<input type='hidden' id='randomcode' name='randomcode' value='{$code1}' />
+<input maxlength='6' size='6' type='text' name='code' />";
+
+Untuk mem-verifikasi apakah kode yang dimasukkan sudah benar atau tidak, dapat 
+menggunakan fungsi berikut.
+
+function verify_code($rec_num, $checkstr) {
+	if ($_SESSION['tmp']['captcha'][0] == $rec_num) {
+		$code = $_SESSION['tmp']['captcha'][1];
+		$_SESSION['tmp']['captcha'] = '';
+		return ($checkstr == $code);
+	}
+	return FALSE;
+}
+
+Jika semua proses verifikasi sudah dilakukan, selanjutnya tinggal meng-input-kan 
+semua data ke dalam database.
+
+mysql_query("INSERT INTO comment (article_id, name, email, comment, date) 
+VALUES ({$id}, '{$nama}', '{$email}', '{$pesan}', NOW() )");
+
+Dengan demikian, komentar dari pengunjung website akan disimpan dan dapat 
+ditampilkan.

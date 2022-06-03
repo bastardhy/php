@@ -1,0 +1,32 @@
+body 
+	{
+	background: url(../images/wooden.jpg) no-repeat fixed top center;
+	}
+#btn 
+	{
+	background: goldenrod;
+	color: black;
+	cursor: pointer;
+	border-color: black;
+	margin: 0 120px;
+	}
+h1
+	{
+	color: white;
+	text-align: center;
+	}
+#frm 
+	{
+	width: 200px;
+	margin: 0 auto;
+	}
+#footer
+	{
+	bottom: 0px;
+	position: absolute;
+	font-size: 12px;
+	margin: 0 500px;
+	color: wheat;
+	text-align: center;
+	
+	}	

@@ -1,0 +1,26 @@
+/*#############################################################
+Name: SQL Injection Exposed
+Date: 2008-11-26
+Description: Simple & lightweight
+Author: EVA-00 
+URL: http://eva-00.exploreyourbrain.org
+Feel free to use and modify but please provide credits.
+#############################################################*/
+a {
+/* standard elements */
+	color: #36C;
+	text-decoration: none;
+}
+a:hover {
+	color: #000;
+	text-decoration: underline;
+}
+/* footer */
+.footer a {
+	color: #36C;
+	text-decoration: none;
+}
+.footer a:hover {
+	color: #000;
+	text-decoration: underline;
+}

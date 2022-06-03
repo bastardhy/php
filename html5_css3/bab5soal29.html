@@ -1,0 +1,42 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<title>contoh css 5-29</title>
+<style type="text/css">
+<!--
+body { font-family: Futura, Arial, sans-serif; }
+nav { height: 41px;
+      background: linear-gradient(to bottom, rgb(93,146,207) 0%, rgb(79,79,181) 100%); }
+	  
+nav ul { margin: 0; }
+nav, ul.submenu { background: #35f; border-radius: 5px; padding: 0; }
+
+nav ul li { display: block; width: 150px; text-align: center; float: left; margin: 0;
+            padding: 0; }
+nav li:hover { background: rgba(0,0,0,0.4); }
+
+nav a { color: #fff; text-decoration: none; display: block; padding: 10px; }
+nav ul.submenu { background: rgba(0,0,0,0.8); position: relative; border-radius: 0 0 5px 5px;
+                 height: 0px; overflow: hidden; }
+
+nav ul.submenu li { float: none; text-align: left; border-bottom: 1px solid rgba(0,0,0,0.3); }
+
+nav ul li { transition: .3s all linear; }
+nav ul li:hover ul.submenu { height: 126px; }
+-->
+</style>
+</head>
+<body>
+<nav role=navigation aria-label="Menu Utama">
+<ul role=menubar>
+<li role=menuitem tabindex=0><a href=#>Beranda</a>
+<li role=menuitem aria-haspopup=true tabindex=0><a href=#>Layanan</a>
+<ul class=submenu role=menu aria-hidden=true>
+<li role=menuitem tabindex=-1><a href=#>Kursus</a>
+<li role=menuitem tabindex=-1><a href=#>Private</a>
+<li role=menuitem tabindex=-1><a href=#>Konsultasi IT</a>
+</ul>
+<li role=menuitem tabindex=0><a href=#>Kontak</a>
+</ul>
+</nav>
+</body>
+</html>

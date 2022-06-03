@@ -1,0 +1,179 @@
+body {
+	background: url(../images/wooden.jpg) repeat fixed top center;
+	}
+
+a {
+	font-family: cursive;
+	font-size: 16px;
+	color: white;
+	text-decoration: none;
+	cursor: pointer;
+	}
+	
+.current {
+	color: goldenrod;
+	}	
+
+#user {
+	float: right;
+	display: block;
+	margin-right: 10px;
+	padding-top: 80px;
+	}
+	
+#user:hover {
+color: goldenrod;
+cursor: pointer;
+}
+
+#container {
+	width: 1000px;
+	margin: auto;
+	}
+	
+#menu {
+	background-color: rgba(255,255,255,0.2);
+	width: 980px;
+	height: 50px;
+   border: 10px double black;
+   -moz-border-radius: 10px;
+   -webkit-border-radius: 10px;
+   border-radius: 10px;
+	}
+	
+#menu ul {
+	margin: 0;
+	padding: 0;
+	}
+	
+#menu ul li {
+	display: inline;
+	border-radius: 10px;
+	padding: 10px 15px;
+	margin-left: 15px;
+	line-height: 40px;
+	}
+	
+#menu ul li a:hover {
+	color: goldenrod;
+	}
+	
+#search-form {
+	float:right;
+	padding-top: 10px;
+	}
+	
+#search-box {
+	background-color: #696969;
+	border-color: transparent;
+	border-radius: 5px;
+	font-size: 12px;
+	font-family: cursive;
+	width: 150px;
+	height: 25px;
+	margin-right: 0;
+	}
+	
+#search-button {
+	background-color: goldenrod;
+	border-color: transparent;
+	color: black;
+	font-size: 14px;
+	font-family: cursive;
+	border-radius: 5px;
+	width: 35px;
+	height: 25px;
+	margin-right: 10px;
+	}
+	
+#search-button:hover {
+	background-color:	gold;
+	cursor: pointer;
+	}	
+	
+input[type=text] {
+	color: white;
+	}
+	
+
+#content {
+	width: 1000px;
+	}
+	
+#contact {
+	width: 600px;
+	height: 650px;
+	margin: 5px 5px;
+	background: rgba(255,255,255,0.2);
+	border: 10px double black;
+   -moz-border-radius: 10px;
+   -webkit-border-radius: 10px;
+   border-radius: 10px;
+	}
+	
+#contact ul li {
+	display: block;
+	}
+	
+#contact ul li a {
+	font-size: 20px;
+	}
+	
+#contact ul li a:hover {
+	color: goldenrod;
+	}
+	
+#contact ul li img {
+	width: 18px;
+	height: 16px;
+	}
+	
+#nav {
+	width: 1000px;
+	text-align: center;
+	margin-bottom: 50px;
+	}
+	
+#nav ul li {
+	display: inline;
+	margin-left: 5px;
+	}
+	
+#nav ul li a:hover {
+	color: goldenrod;
+	}
+
+.footer	{
+	position: relative;
+	margin: 0 auto;
+	line-height: 25px;
+	text-align: center;
+	font-family: arial;
+	font-size: 14px;
+	color: wheat;
+	background-color: rgba(255,255,255,0.2);
+	width: 1000px;
+	height: 25px;
+   border: 10px double black;
+   -moz-border-radius: 10px;
+   -webkit-border-radius: 10px;
+   border-radius: 10px;
+   cursor: pointer;
+	}
+	
+.footer:hover {
+	color: goldenrod;
+	}
+	
+.copy-left {
+    display: inline-block;
+    margin: 0;
+    font-size: 14px;
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: FlipH;
+	}
+	

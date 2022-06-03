@@ -1,0 +1,306 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<title>contoh css 6-17</title>
+<style type="text/css">
+<!--
+[class*="fontawesome-"]:before {
+  font-family: 'FontAwesome', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.fl{ float:left; }
+.fr{ float: right; }
+
+.group:before,
+.group:after {
+    konten: "";
+    display: table;
+} 
+
+.group:after {
+    clear: both;
+}
+
+.group {
+    zoom: 1;  /*For IE 6/7 (trigger hasLayout) */
+}
+
+body {
+    background: #F2F2F2;
+    font-family: 'Droid Sans', sans-serif;
+    line-height: 1;
+    font-size: 16px;    
+}
+
+.wrapper {
+    
+}
+
+.tabel-harga {
+    width: 80%;
+    margin: 50px auto;
+    text-align: center;
+    padding: 10px;
+    padding-right: 0;
+}
+
+.tabel-harga .heading{
+    color: #9C9E9F;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    margin-bottom: 4rem;
+}
+
+.block{
+    width: 30%;    
+    margin: 0 15px;
+    overflow: hidden;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;    
+/*    border: 1px solid red;*/
+}
+
+.title,.pt-footer{
+    color: #FEFEFE;
+    text-transform: capitalize;
+    line-height: 2.5;
+    position: relative;
+}
+
+.konten{
+    position: relative;
+    color: #FEFEFE;
+    padding: 20px 0 10px 0;
+}
+
+.konten:after, .konten:before,.pt-footer:before,.pt-footer:after {
+	top: 100%;
+	left: 50%;
+	border: solid transparent;
+	konten: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+.pt-footer:after,.pt-footer:before{
+    top:0;
+}
+
+.konten:after,.pt-footer:after {
+	border-color: rgba(136, 183, 213, 0);	
+	border-width: 5px;
+	margin-left: -5px;
+}
+
+.harga{
+    position: relative;
+    display: inline-block;
+    margin-bottom: 0.625rem;
+}
+
+.harga span{    
+    font-size: 6rem;
+    letter-spacing: 8px;
+    font-weight: bold;        
+}
+
+.harga sup{
+    font-size: 1.5rem;    
+    position: absolute;    
+    top: 12px;
+    left: -12px;
+}
+
+.hint{
+    font-style: italic;
+    font-size: 0.9rem;
+}
+
+.fitur{
+    list-style-type: none;    
+    background: #FFFFFF;
+    text-align: left;
+    color: #9C9C9C;
+    padding:30px 22%;
+    font-size: 0.9rem;
+}
+
+.fitur li{
+    padding:15px 0;
+    width: 100%;
+}
+
+.fitur li span{
+   padding-right: 0.4rem; 
+}
+
+.pt-footer{
+    font-size: 0.95rem;
+    text-transform: capitalize;
+}
+
+.personal .title{        
+    background: #78CFBF;    
+}
+
+.personal .konten,.personal .pt-footer{
+    background: #82DACA;
+}
+
+.personal .konten:after{	
+	border-top-color: #82DACA;	
+}
+
+.personal .pt-footer:after{
+    border-top-color: #FFFFFF;
+}
+
+.profesional .title{
+    background: #3EC6E0;
+}
+
+.profesional .konten,.profesional .pt-footer{
+    background: #53CFE9;
+}
+
+.profesional .konten:after{	
+	border-top-color: #53CFE9;	
+}
+
+.profesional .pt-footer:after{
+    border-top-color: #FFFFFF;
+}
+
+.bisnis .title{
+    background: #E3536C;
+}
+
+.bisnis .konten,.bisnis .pt-footer{
+    background: #EB6379;
+}
+
+.bisnis .konten:after{	
+	border-top-color: #EB6379;	
+}
+
+.bisnis .pt-footer:after {	
+	border-top-color: #FFFFFF;	
+}
+-->
+</style>
+</head>
+<body>
+
+  <body>
+    <div class="wrapper">
+         <div class="tabel-harga group">
+            <h1 class="heading">
+                Tabel Harga
+            </h1>
+            <!-- PERSONAL -->
+            <div class="block personal fl">
+                <h2 class="title">personal</h2>
+                <!-- konten -->
+                <div class="konten">
+                    <p class="harga">
+                        <sup><sup>Rp</sup></sup>
+                        <span>29</span>
+                        <sub>/bulan</sub>
+                    </p>
+                    <p class="hint">Cocok untuk mahasiswa/pegawai</p>
+                </div>
+                <!-- /konten -->
+                <!-- fitur -->
+                <ul class="fitur">
+                    <li><span class="fontawesome-cog"></span>1 Instal WordPress</li>
+                    <li><span class="fontawesome-star"></span>25000 kunjungan/bulan</li>
+                    <li><span class="fontawesome-dashboard"></span>Data Transfer tak-terbatas</li>
+                    <li><span class="fontawesome-cloud"></span>10GB Memori</li>
+                </ul>
+                <!-- /fitur -->
+                <!-- PT-FOOTER -->
+                <div class="pt-footer">
+                    <p>Silahkan Diuji</p>
+                </div>
+                <!-- /PT-FOOTER -->
+            </div>
+            <!-- /PERSONAL -->
+            <!-- profesional -->
+            <div class="block profesional fl">
+                <h2 class="title">profesional</h2>
+                <!-- konten -->
+                <div class="konten">
+                    <p class="harga">
+                        <sup><sup>Rp</sup></sup>
+                        <span>99</span>
+                        <sub>/bulan</sub>
+                    </p>
+                    <p class="hint">Cocok untuk pengusaha muda</p>
+                </div>
+                <!-- /konten -->
+                <!-- fitur -->
+                <ul class="fitur">
+                    <li><span class="fontawesome-cog"></span>10 Instal WordPress</li>
+                    <li><span class="fontawesome-star"></span>200000 kunjungan/bulan</li>
+                    <li><span class="fontawesome-dashboard"></span>Data Transfer tak-terbatas</li>
+                    <li><span class="fontawesome-cloud"></span>20GB Memori</li>
+                </ul>
+                <!-- /fitur -->
+                <!-- PT-FOOTER -->
+                <div class="pt-footer">
+                    <p>Silahkan Diuji</p>
+                </div>
+                <!-- /PT-FOOTER -->
+            </div>
+            <!-- /profesional -->
+            <!-- bisnis -->
+            <div class="block bisnis fl">
+                <h2 class="title">bisnis</h2>
+                <!-- konten -->
+                <div class="konten">
+                    <p class="harga">
+                        <sup><sup>Rp</sup></sup>
+                        <span>249</span>
+                        <sub>/bulan</sub>
+                    </p>
+                    <p class="hint">Cocok untuk pebisnis</p>
+                </div>
+                <!-- /konten -->
+
+                <!-- fitur -->
+                <ul class="fitur">
+                    <li><span class="fontawesome-cog"></span>25 Instal WordPress</li>
+                    <li><span class="fontawesome-star"></span>400000 kunjungan/bulan</li>
+                    <li><span class="fontawesome-dashboard"></span>Data Transfer tak-terbatas</li>
+                    <li><span class="fontawesome-cloud"></span>30GB Memori</li>
+                </ul>
+                <!-- /fitur -->
+
+                <!-- PT-FOOTER -->
+                <div class="pt-footer">
+                    <p>Silahkan Diuji</p>
+                </div>
+                <!-- /PT-FOOTER -->
+            </div>
+            <!-- /bisnis -->
+        </div>
+        <!-- /tabel-harga -->
+    </div>
+</body>
+
+</body>
+</html>

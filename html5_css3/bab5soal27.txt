@@ -1,0 +1,48 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<title>contoh css 5-27</title>
+<style type="text/css">
+<!--
+ul[role=navigation] li {
+    display: inline; font-family: Futura, Arial, sans-serif;
+    text-transform: uppercase;
+}
+
+ul[role=navigation] li a {
+    position: relative; top: 0;
+    transition: 0.2s all linear;
+    text-decoration: none; color: #fff;
+    padding: 0.8rem 1.2rem 2rem 1.2rem;
+    border: 1px solid #777; border-radius: 5px 5px 0 0;
+    background: linear-gradient(to bottom, #dfc891, #776c51);
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    letter-spacing: 0.15rem; text-shadow: 0 1px 0 #000;
+}
+
+ul[role=navigation] {
+    background: #000; padding-top: 3.2rem; padding-bottom: 1rem;
+    overflow: hidden; margin-top: 0; }
+	
+ul[role=navigation] li {
+    display: inline; font-family: Futura, Arial, sans-serif;
+    text-transform: uppercase; margin-left: -.5rem; }
+
+ul[role=navigation] li a.forefront { -0.2rem; z-index: 2;}
+
+ul[role=navigation] li a:hover, ul[role=navigation] li a:focus {
+    top: -0.6rem;
+}
+-->
+</style>
+</head>
+<body>
+<nav>
+<ul role=navigation >
+<li><a href=index.html accesskey=1>Beranda</a>
+<li><a href=baru-xyz-corp.html accesskey=2>Yang Baru</a>
+<li><a href=tentang-xyz-corp.html accesskey=a>Tentang Kami</a>
+<li><a href=kontak-xyz-corp.html accesskey=6>Kontak</a>
+</ul>
+</nav>
+</body>
+</html>

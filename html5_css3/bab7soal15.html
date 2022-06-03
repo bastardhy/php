@@ -1,0 +1,70 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<title>contoh css 7-15</title>
+<style type="text/css">
+<!--
+
+div.menu4
+{
+    /*width:500px;margin:0 auto;*/
+    text-align:center;
+    font-size:0;
+    height: 25px;  
+    *position:relative;*top:1px;
+}
+
+div.menu4 a
+{
+    display: inline-block;
+    margin-right:6px; 
+    background:#FFF url(bg.gif) repeat-x 0 0;
+    padding-left:4px;
+    vertical-align:top;/*ChangeSet#1*/
+    text-decoration:none;
+}
+
+div.menu4 a span
+{
+    display: inline-block;
+    background:#FFF url(bg.gif) repeat-x 100% 0;
+    padding: 0 20px;
+    text-decoration:none;
+    font: normal 12px Arial;
+    line-height: 25px;
+    color:#7087A9;
+    vertical-align:top;
+}
+
+div.menu4 a:hover, div.menu4 a.current
+{
+    background:#FFF url(bg3.gif) repeat-x 0 -25px;
+    line-height: 26px;
+}
+
+div.menu4 a:hover span, div.menu4 a.current span
+{
+    background:#FFF url(bg3.gif) repeat-x 100% -25px;
+    line-height: 26px;
+    color:#244D8A;
+}
+
+div.menu4sub
+{
+    height:8px;
+    border:1px solid #C2D5EF;
+    background:#eee url(bg3.gif) repeat-x 0 -50px;
+}
+-->
+</style>
+</head>
+<body>
+<div class="menu4">
+    <a href="#1"><span>CSS</span></a>
+    <a href="#2" class="current"><span>Menu CSS</span></a>
+    <a href="#3"><span>Menu</span></a>
+    <a href="#4"><span>Level Satu</span></a>
+    <a href="#5"><span>Menu CSS</span></a>
+</div>
+<div class="menu4sub"> </div>
+</body>
+</html>

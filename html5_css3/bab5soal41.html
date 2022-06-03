@@ -1,0 +1,45 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<title>contoh css 5-40</title>
+<style type="text/css">
+<!--
+#lokasi {
+    position: relative;
+    height: 7em;
+    background: yellow;
+    text-align: center;
+  }
+  
+  #kotak {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100px;
+    background: blue;
+    line-height: 5em;
+    color: #fff;
+    -webkit-transition: all 2s cubic-bezier(0.250, 0.100, 0.250, 1.000); 
+    -moz-transition: all 2s cubic-bezier(0.250, 0.100, 0.250, 1.000); 
+    -o-transition: all 2s cubic-bezier(0.250, 0.100, 0.250, 1.000); 
+    transition: all 2s cubic-bezier(0.250, 0.100, 0.250, 1.000); /* ease */
+	
+	-webkit-transition-timing-function: cubic-bezier(0.250, 0.100, 0.250, 1.000); 
+    -moz-transition-timing-function: cubic-bezier(0.250, 0.100, 0.250, 1.000); 
+    -o-transition-timing-function: cubic-bezier(0.250, 0.100, 0.250, 1.000); 
+    transition-timing-function: cubic-bezier(0.250, 0.100, 0.250, 1.000); /* ease */
+  }
+  
+  #lokasi:hover #kotak {
+    left: calc(100% - 100px);
+    bottom: 2em;
+    
+  }
+-->
+</style>
+</head>
+<body>
+<div id="lokasi">
+<div id="kotak">#kotak</div>
+</div>
+</body>
+</html>

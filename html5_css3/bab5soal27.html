@@ -1,0 +1,44 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<title>contoh css 5-27</title>
+<style type="text/css">
+<!--
+form { font-size: 1.2rem; font-family: "Gill Sans", Arial, sans-serif; }
+
+label,input { display: block; }
+
+label:first-letter { border-bottom: 2px solid #bbb; }
+
+input { border: 1px solid #bbb; padding: .4rem; border-radius: .2rem; margin: .5rem 0; }
+
+input[type="submit"] { border: none; text-transform: uppercase; }
+}
+
+input:valid, input:invalid {box-shadow: none; }
+
+input:valid { border: 2px solid green; }
+
+input:invalid { border: 2px solid yellow; }
+
+input + span:after { content: attr(title); color: red; margin-left: 0.6rem; opacity: 0;
+transition-property: opacity;transition-duration: 2s; transition-delay: 2s;}
+-->
+</style>
+</head>
+<body>
+  <form>
+    <label for=umur accesskey=a>Umur</label>
+    <input type=number name=umur id=umur size=3 maxlength=2 min=1 max=99 pattern="^([1-9]|[1-9][0-9]){1,2}$" required >
+	<span title="Harus antara 1 dan 99"></span>
+	
+    <label for=nama accesskey=n>Nama/label>
+    <input type=text name=nama id=nama size=40 maxlength=38 pattern="^[a-zA-Z]'?[- 'a-zA-Z]+$" placeholder="Nama penuh Anda" required >
+	<span title="Huruf dan spasi saja"></span>
+	
+    <label for=email accesskey=e>Alamat EMail</label>
+    <input type=email name=email id=email size=50 maxlength=256 placeholder="Email Anda" required>
+    <input type=submit value=submit>
+    <span title="Harus merupakan alamat email yang utuh"></span>
+</form>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<head>
+<title>HOME</title>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link href='../images/index.png' rel='icon' type='png'>
+</head>
+<div style="padding:85px;">
+<h1>SIGN UP</h1>
+<form method="post" action="proses.php">
+<input type="text" name="name" placeholder="username"><br><br>
+<input type="text" name="email" placeholder="example@example.com"><br><br>
+<input type="password" name="pass" placeholder="********"><br><br>
+<select name="date">
+<option value="DATE">DATE</option>
+<option value="01">01</option>
+<option value="02">02</option>
+<option value="03">03</option>
+</select>
+<select name="month">
+<option value="MONTH">MONTH</option>
+<option value="JAN">JAN</option>
+<option value="FEB">FEB</option>
+<option value="MAR">MAR</option>
+</select>
+<select name="year">
+<option value="YEAR">YEAR</option>
+<option value="2016">2016</option>
+<option value="2015">2015</option>
+<option value="2014">2014</option>
+</select><br><br>
+<input type="submit" name="signup" value="SIGN UP">
+</form>
+</div>
+</div>
+<div style="width:500px;" "height:600px;" "float:right">
+<div style="padding:85px;" "padding-right:200px">
+<h1>SIGN IN</h1>
+<form method="post" action="proses.php">
+<input type="text" name="name" placeholder="username"><br><br>
+<input type="password" name="pass" placeholder="********"><br><br>
+<input type="submit" name="signin" value="SIGN IN">
+</div>
+</div>
+
+
+
+
+
+
